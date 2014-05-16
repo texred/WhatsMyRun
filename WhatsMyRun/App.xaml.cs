@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using GalaSoft.MvvmLight.Threading;
 
 // The Grid App template is documented at http://go.microsoft.com/fwlink/?LinkId=234226
 
@@ -85,6 +86,7 @@ namespace WhatsMyRun
 
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
+                DispatcherHelper.Initialize();
             }
             if (rootFrame.Content == null)
             {
