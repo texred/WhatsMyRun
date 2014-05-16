@@ -112,13 +112,13 @@
     <Compile Include="Common\PageBase.cs" />
     <Compile Include="Common\PageOrientation.cs" />
     <Compile Include="Common\UserControlBase.cs" />
-    <Compile Include="GroupedItemsPage.xaml.cs">
+    <Compile Include="Pages\GroupedItems\GroupedItemsPage.xaml.cs">
       <DependentUpon>GroupedItemsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GroupDetailPage.xaml.cs">
+    <Compile Include="Pages\GroupDetail\GroupDetailPage.xaml.cs">
       <DependentUpon>GroupDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemDetailPage.xaml.cs">
+    <Compile Include="Pages\ItemDetail\ItemDetailPage.xaml.cs">
       <DependentUpon>ItemDetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -155,15 +155,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="GroupedItemsPage.xaml">
+    <Page Include="Pages\GroupedItems\GroupedItemsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="GroupDetailPage.xaml">
+    <Page Include="Pages\GroupDetail\GroupDetailPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ItemDetailPage.xaml">
+    <Page Include="Pages\ItemDetail\ItemDetailPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

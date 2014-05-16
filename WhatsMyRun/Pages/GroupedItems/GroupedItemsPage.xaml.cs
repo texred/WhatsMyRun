@@ -1,27 +1,20 @@
-﻿using WhatsMyRun.Common;
+﻿using System;
+using WhatsMyRun.Common;
 using WhatsMyRun.Data;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+using WhatsMyRun.Pages.GroupDetail;
+using WhatsMyRun.Pages.ItemDetail;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Item Detail Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234232
+// The Grouped Items Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234231
 
-namespace WhatsMyRun
+namespace WhatsMyRun.Pages.GroupedItems
 {
     /// <summary>
-    /// A page that displays details for a single item within a group.
+    /// A page that displays a grouped collection of items.
     /// </summary>
-    public sealed partial class ItemDetailPage : Page
+    public sealed partial class GroupedItemsPage : Page
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
@@ -43,7 +36,7 @@ namespace WhatsMyRun
             get { return this.defaultViewModel; }
         }
 
-        public ItemDetailPage()
+        public GroupedItemsPage()
         {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
@@ -64,8 +57,37 @@ namespace WhatsMyRun
         private async void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            var item = await SampleDataSource.GetItemAsync((String)e.NavigationParameter);
-            this.DefaultViewModel["Item"] = item;
+            var sampleDataGroups = await SampleDataSource.GetGroupsAsync();
+            this.DefaultViewModel["Groups"] = sampleDataGroups;
+        }
+
+        /// <summary>
+        /// Invoked when a group header is clicked.
+        /// </summary>
+        /// <param name="sender">The Button used as a group header for the selected group.</param>
+        /// <param name="e">Event data that describes how the click was initiated.</param>
+        void Header_Click(object sender, RoutedEventArgs e)
+        {
+            // Determine what group the Button instance represents
+            var group = (sender as FrameworkElement).DataContext;
+
+            // Navigate to the appropriate destination page, configuring the new page
+            // by passing required information as a navigation parameter
+            this.Frame.Navigate(typeof(GroupDetailPage), ((SampleDataGroup)group).UniqueId);
+        }
+
+        /// <summary>
+        /// Invoked when an item within a group is clicked.
+        /// </summary>
+        /// <param name="sender">The GridView (or ListView when the application is snapped)
+        /// displaying the item clicked.</param>
+        /// <param name="e">Event data that describes the item clicked.</param>
+        void ItemView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            // Navigate to the appropriate destination page, configuring the new page
+            // by passing required information as a navigation parameter
+            var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
+            this.Frame.Navigate(typeof(ItemDetailPage), itemId);
         }
 
         #region NavigationHelper registration
@@ -78,7 +100,6 @@ namespace WhatsMyRun
         /// and <see cref="GridCS.Common.NavigationHelper.SaveState"/>.
         /// The navigation parameter is available in the LoadState method 
         /// in addition to page state preserved during an earlier session.
-
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
