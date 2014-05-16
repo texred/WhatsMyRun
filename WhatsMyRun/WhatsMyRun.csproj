@@ -118,6 +118,7 @@
     <Compile Include="Pages\GroupDetail\GroupDetailPage.xaml.cs">
       <DependentUpon>GroupDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\GroupedItems\GroupedItemsViewModel.cs" />
     <Compile Include="Pages\ItemDetail\ItemDetailPage.xaml.cs">
       <DependentUpon>ItemDetailPage.xaml</DependentUpon>
     </Compile>

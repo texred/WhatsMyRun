@@ -16,6 +16,7 @@ using Microsoft.Practices.ServiceLocation;
 using WhatsMyRun.Common;
 using WhatsMyRun.Services.Dialog;
 using WhatsMyRun.Services.Navigation;
+using WhatsMyRun.Pages.GroupedItems;
 
 namespace WhatsMyRun.ViewModel
 {
@@ -28,19 +29,19 @@ namespace WhatsMyRun.ViewModel
     /// </summary>
     public class ViewModelLocator
     {
-        ///// <summary>
-        ///// Gets the Main property.
-        ///// </summary>
-        //[SuppressMessage("Microsoft.Performance",
-        //    "CA1822:MarkMembersAsStatic",
-        //    Justification = "This non-static member is needed for data binding purposes.")]
-        //public MainViewModel Main
-        //{
-        //    get
-        //    {
-        //        return ServiceLocator.Current.GetInstance<MainViewModel>();
-        //    }
-        //}
+        /// <summary>
+        /// Gets the Main property.
+        /// </summary>
+        [SuppressMessage("Microsoft.Performance",
+            "CA1822:MarkMembersAsStatic",
+            Justification = "This non-static member is needed for data binding purposes.")]
+        public GroupedItemsViewModel GroupedItems
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<GroupedItemsViewModel>();
+            }
+        }
 
         static ViewModelLocator()
         {
@@ -57,7 +58,7 @@ namespace WhatsMyRun.ViewModel
 
             SimpleIoc.Default.Register<IDialogService, DialogService>();
             SimpleIoc.Default.Register<INavigationService, NavigationService>();
-            //SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<GroupedItemsViewModel>();
         }
 
         /// <summary>
