@@ -120,6 +120,8 @@
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="Services\Dialog\DialogService.cs" />
+    <Compile Include="Services\Dialog\IDialogService.cs" />
     <Compile Include="Services\Navigation\INavigationService.cs" />
     <Compile Include="Services\Navigation\NavigationService.cs" />
   </ItemGroup>
