@@ -130,6 +130,8 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Services\Dialog\DialogService.cs" />
     <Compile Include="Services\Dialog\IDialogService.cs" />
+    <Compile Include="Services\MapMyRun\Responses\WorkoutResponse\WorkoutResponse.cs" />
+    <Compile Include="Services\MapMyRun\Responses\WorkoutsResponse\WorkoutsResponse.cs" />
     <Compile Include="Services\Navigation\INavigationService.cs" />
     <Compile Include="Services\Navigation\NavigationService.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
