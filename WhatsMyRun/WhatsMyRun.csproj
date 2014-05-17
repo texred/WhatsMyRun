@@ -138,6 +138,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="Services\MapMyRun\MMR keys.txt" />
     <None Include="packages.config" />
     <None Include="WhatsMyRun_TemporaryKey.pfx" />
     <Content Include="DataModel\SampleData.json" />
@@ -185,6 +186,7 @@
       <Name>Behaviors SDK %28XAML%29</Name>
     </SDKReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

@@ -1,0 +1,3 @@
+﻿Application: WhatsMyRun 
+Key: ypn4h2h2jrjpkj5zwm28e2d97qewkaed 
+Secret: 6HNHSbMYDusDERxSDncFyTYjG3732PmaUZ2HqQHneMB
