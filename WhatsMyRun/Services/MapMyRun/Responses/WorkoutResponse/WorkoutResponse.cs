@@ -9,6 +9,15 @@ namespace WhatsMyRun.Services.MapMyRun.Responses.WorkoutResponse
     //Putting in sep folder, as there were overlapping type definitions between different responses (ie: Links class has diff props between Workout and Workouts)
     public class WorkoutResponse
     {
+        public WorkoutResponse()
+        {
+            //var auth = new Windows.Security.Authentication.Web.WebAuthenticationBroker();
+
+            //var mmrUri = new Uri("http://mapmyrun.com");
+            //var resp = Windows.Security.Authentication.Web.WebAuthenticationBroker.AuthenticateAsync
+            //    (Windows.Security.Authentication.Web.WebAuthenticationOptions.UseHttpPost, mmrUri);
+
+        }
         public DateTime start_datetime { get; set; }
         public string name { get; set; }
         public DateTime updated_datetime { get; set; }

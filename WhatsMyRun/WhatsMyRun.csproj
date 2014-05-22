@@ -130,6 +130,8 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Services\Dialog\DialogService.cs" />
     <Compile Include="Services\Dialog\IDialogService.cs" />
+    <Compile Include="Services\MapMyRun\IGetWorkoutData.cs" />
+    <Compile Include="Services\MapMyRun\MapMyFitnessDataFetcher.cs" />
     <Compile Include="Services\MapMyRun\Responses\WorkoutResponse\WorkoutResponse.cs" />
     <Compile Include="Services\MapMyRun\Responses\WorkoutsResponse\WorkoutsResponse.cs" />
     <Compile Include="Services\Navigation\INavigationService.cs" />
@@ -141,6 +143,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="Services\MapMyRun\MMR keys.txt" />
+    <Content Include="Services\MapMyRun\ReadMe.txt" />
     <None Include="packages.config" />
     <None Include="WhatsMyRun_TemporaryKey.pfx" />
     <Content Include="DataModel\SampleData.json" />
