@@ -128,6 +128,8 @@
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="Services\DataRequestor\SampleDataRequestor.cs" />
+    <Compile Include="Services\DataRequestor\IDataRequestor.cs" />
     <Compile Include="Services\Dialog\DialogService.cs" />
     <Compile Include="Services\Dialog\IDialogService.cs" />
     <Compile Include="Services\MapMyRun\IGetWorkoutData.cs" />
@@ -145,7 +147,6 @@
     <Content Include="Services\MapMyRun\MMR keys.txt" />
     <Content Include="Services\MapMyRun\ReadMe.txt" />
     <None Include="packages.config" />
-    <None Include="SampleData\Workouts.json" />
     <None Include="WhatsMyRun_TemporaryKey.pfx" />
     <Content Include="DataModel\SampleData.json" />
   </ItemGroup>
