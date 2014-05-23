@@ -145,6 +145,7 @@
     <Content Include="Services\MapMyRun\MMR keys.txt" />
     <Content Include="Services\MapMyRun\ReadMe.txt" />
     <None Include="packages.config" />
+    <None Include="SampleData\Workouts.json" />
     <None Include="WhatsMyRun_TemporaryKey.pfx" />
     <Content Include="DataModel\SampleData.json" />
   </ItemGroup>
