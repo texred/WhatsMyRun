@@ -129,6 +129,8 @@
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="Services\DataProviders\Workouts\IWorkoutDataProvider.cs" />
+    <Compile Include="Services\DataProviders\Workouts\WorkoutDataProvider.cs" />
     <Compile Include="Services\DataRequestor\SampleDataRequestor.cs" />
     <Compile Include="Services\DataRequestor\IDataRequestor.cs" />
     <Compile Include="Services\Dialog\DialogService.cs" />

@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace WhatsMyRun.Services.DataRequestor
 {
     public class SampleDataRequestor : IDataRequestor
     {
-        public async Task<T> GetDataAsync<T>(Uri uri)
+        public async Task<JObject> GetDataAsync(Uri uri)
         {
             if (uri.AbsolutePath.Contains("workout"))
             {
@@ -17,15 +19,12 @@ namespace WhatsMyRun.Services.DataRequestor
             using (var client = new HttpClient())
             using (var response = await client.GetAsync(uri))
             {
-                if (response == null) return default(T);
+                if (response == null) return null;
                 response.EnsureSuccessStatusCode();
 
                 var content = await response.Content.ReadAsStringAsync();
-
-                // Deserialize
+                return JObject.Parse(content);
             }
-
-            return default(T);
         }
 
         public Task<T> PostDataAsync<T>(Uri uri, IDictionary<string, string> parameters)
