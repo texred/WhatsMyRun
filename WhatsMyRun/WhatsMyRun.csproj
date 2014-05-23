@@ -112,6 +112,7 @@
     <Compile Include="Common\PageBase.cs" />
     <Compile Include="Common\PageOrientation.cs" />
     <Compile Include="Common\UserControlBase.cs" />
+    <Compile Include="DataModel\Workouts\WorkoutDataModel.cs" />
     <Compile Include="Pages\GroupedItems\GroupedItemsPage.xaml.cs">
       <DependentUpon>GroupedItemsPage.xaml</DependentUpon>
     </Compile>
