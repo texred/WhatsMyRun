@@ -1,7 +1,11 @@
-﻿using GalaSoft.MvvmLight;
+﻿using System.Linq;
+using GalaSoft.MvvmLight;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using GalaSoft.MvvmLight.Ioc;
+using Microsoft.Practices.ServiceLocation;
 using WhatsMyRun.Data;
+using WhatsMyRun.Services.DataProviders.Workouts;
 using WhatsMyRun.Services.Navigation;
 
 namespace WhatsMyRun.Pages.GroupedItems
@@ -31,6 +35,11 @@ namespace WhatsMyRun.Pages.GroupedItems
             {
                 _groups.Add(group);
             }
+
+            var workoutProvider = ServiceLocator.Current.GetInstance<IWorkoutDataProvider>();
+            var workouts = await workoutProvider.GetWorkoutsForUserAsync(3217681);
+
+            var count = workouts.Count();
         }
     }
 }

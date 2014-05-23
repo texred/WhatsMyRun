@@ -6,6 +6,6 @@ namespace WhatsMyRun.Services.DataProviders.Workouts
 {
     public interface IWorkoutDataProvider
     {
-        Task<IEnumerable<WorkoutDataModel>> GetWorksForUser(int userId);
+        Task<IEnumerable<WorkoutDataModel>> GetWorkoutsForUserAsync(int userId);
     }
 }

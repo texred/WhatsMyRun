@@ -8,11 +8,11 @@ using WhatsMyRun.Services.DataRequestor;
 
 namespace WhatsMyRun.Services.DataProviders.Workouts
 {
-    public class WorkoutDataProvider
+    public class WorkoutDataProvider : IWorkoutDataProvider
     {
-        private string ServiceUri = "https://oauth2-api.mapmyapi.com/v7.0/workout/?user={0}";
+        private const string ServiceUri = "https://oauth2-api.mapmyapi.com/v7.0/workout/?user={0}";
 
-        public async Task<IEnumerable<WorkoutDataModel>> GetWorksForUserAsync(int userId)
+        public async Task<IEnumerable<WorkoutDataModel>> GetWorkoutsForUserAsync(int userId)
         {
             var requestor = ServiceLocator.Current.GetInstance<IDataRequestor>();
             var uri = new Uri(string.Format(ServiceUri, userId));
@@ -20,10 +20,10 @@ namespace WhatsMyRun.Services.DataProviders.Workouts
 
             var workouts = new List<WorkoutDataModel>();
             
-            foreach (JObject workoutObj in workoutData.GetValue("workout"))
+            foreach (JObject workoutObj in workoutData["_embedded"]["workouts"]) //workoutData.GetValue("_embedded$workouts"))
             {
                 var workout = new WorkoutDataModel();
-                workout.ActiveTimeInSeconds = workoutObj.GetValue("aggregates$active_time_total").Value<double>();
+                workout.ActiveTimeInSeconds = workoutObj["aggregates"]["active_time_total"].Value<double>();
                 workouts.Add(workout);
             }
             return workouts;

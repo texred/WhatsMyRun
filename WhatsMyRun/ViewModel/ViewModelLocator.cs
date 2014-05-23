@@ -14,6 +14,8 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 using WhatsMyRun.Common;
+using WhatsMyRun.Services.DataProviders.Workouts;
+using WhatsMyRun.Services.DataRequestor;
 using WhatsMyRun.Services.Dialog;
 using WhatsMyRun.Services.Navigation;
 using WhatsMyRun.Pages.GroupedItems;
@@ -55,7 +57,8 @@ namespace WhatsMyRun.ViewModel
             //{
             //    SimpleIoc.Default.Register<IDataService, DataService>();
             //}
-
+            SimpleIoc.Default.Register<IDataRequestor, SampleDataRequestor>();
+            SimpleIoc.Default.Register<IWorkoutDataProvider, WorkoutDataProvider>();
             SimpleIoc.Default.Register<IDialogService, DialogService>();
             SimpleIoc.Default.Register<INavigationService, NavigationService>();
             SimpleIoc.Default.Register<GroupedItemsViewModel>();
