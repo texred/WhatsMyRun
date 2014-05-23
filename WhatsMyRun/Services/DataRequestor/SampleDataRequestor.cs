@@ -24,6 +24,8 @@ namespace WhatsMyRun.Services.DataRequestor
 
                 // Deserialize
             }
+
+            return default(T);
         }
 
         public Task<T> PostDataAsync<T>(Uri uri, IDictionary<string, string> parameters)
