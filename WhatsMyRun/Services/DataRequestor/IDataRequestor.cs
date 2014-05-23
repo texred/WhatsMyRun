@@ -7,7 +7,12 @@ namespace WhatsMyRun.Services.DataRequestor
 {
     public interface IDataRequestor
     {
-        Task<JObject> GetDataAsync(Uri uri);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="uri"></param>
+        /// <returns>JSON string</returns>
+        Task<string> GetDataAsync(Uri uri);
 
         Task<T> PostDataAsync<T>(Uri uri, IDictionary<string, string> parameters);
     }

@@ -11,12 +11,18 @@ namespace WhatsMyRun.Services.DataProviders.Workouts
     public class WorkoutDataProvider : IWorkoutDataProvider
     {
         private const string ServiceUri = "https://oauth2-api.mapmyapi.com/v7.0/workout/?user={0}";
+        private readonly IDataRequestor _requestor;
+
+        public WorkoutDataProvider(IDataRequestor requestor)
+        {
+            _requestor = requestor;
+        }
 
         public async Task<IEnumerable<WorkoutDataModel>> GetWorkoutsForUserAsync(int userId)
         {
-            var requestor = ServiceLocator.Current.GetInstance<IDataRequestor>();
             var uri = new Uri(string.Format(ServiceUri, userId));
-            var workoutData = await requestor.GetDataAsync(uri);
+            var workoutDataString = await _requestor.GetDataAsync(uri);
+            var workoutData = JObject.Parse(workoutDataString);
 
             var workouts = new List<WorkoutDataModel>();
             
