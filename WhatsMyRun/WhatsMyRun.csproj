@@ -112,7 +112,6 @@
     <Compile Include="Common\PageBase.cs" />
     <Compile Include="Common\PageOrientation.cs" />
     <Compile Include="Common\UserControlBase.cs" />
-    <Compile Include="DataModel\Workouts\WorkoutDataModel.cs" />
     <Compile Include="Pages\GroupedItems\GroupedItemsPage.xaml.cs">
       <DependentUpon>GroupedItemsPage.xaml</DependentUpon>
     </Compile>
@@ -129,16 +128,8 @@
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
-    <Compile Include="Services\DataProviders\Workouts\IWorkoutDataProvider.cs" />
-    <Compile Include="Services\DataProviders\Workouts\WorkoutDataProvider.cs" />
-    <Compile Include="Services\DataRequestor\SampleDataRequestor.cs" />
-    <Compile Include="Services\DataRequestor\IDataRequestor.cs" />
     <Compile Include="Services\Dialog\DialogService.cs" />
     <Compile Include="Services\Dialog\IDialogService.cs" />
-    <Compile Include="Services\MapMyRun\IGetWorkoutData.cs" />
-    <Compile Include="Services\MapMyRun\MapMyFitnessDataFetcher.cs" />
-    <Compile Include="Services\MapMyRun\Responses\WorkoutResponse\WorkoutResponse.cs" />
-    <Compile Include="Services\MapMyRun\Responses\WorkoutsResponse\WorkoutsResponse.cs" />
     <Compile Include="Services\Navigation\INavigationService.cs" />
     <Compile Include="Services\Navigation\NavigationService.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
@@ -147,9 +138,9 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="Services\MapMyRun\MMR keys.txt" />
-    <Content Include="Services\MapMyRun\ReadMe.txt" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="WhatsMyRun_TemporaryKey.pfx" />
     <Content Include="DataModel\SampleData.json" />
   </ItemGroup>
@@ -199,7 +190,16 @@
       <Name>Behaviors SDK %28XAML%29</Name>
     </SDKReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WhatsMyRun.DataModel\WhatsMyRun.DataModel.csproj">
+      <Project>{b81a241f-84e9-43e3-9357-b7e91a958ead}</Project>
+      <Name>WhatsMyRun.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WhatsMyRun.Services\WhatsMyRun.Services.csproj">
+      <Project>{57be12d2-e8d8-43fc-90b6-0db4b200b17c}</Project>
+      <Name>WhatsMyRun.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
