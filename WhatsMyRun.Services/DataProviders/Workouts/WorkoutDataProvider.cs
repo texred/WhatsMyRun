@@ -22,7 +22,7 @@ namespace WhatsMyRun.Services.DataProviders.Workouts
         {
             var uri = new Uri(string.Format(ServiceUri, userId));
             //changed to string because of compile issues
-            var workoutDataString = await _requestor.GetDataAsync<string>(uri);
+            var workoutDataString = await _requestor.GetDataAsync(uri);
             var workoutData = JObject.Parse(workoutDataString);
 
             var workouts = new List<WorkoutDataModel>();
