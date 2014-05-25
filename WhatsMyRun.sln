@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsMyRun.Services", "What
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{9120CF11-6BFD-4F0C-860A-601C3041062B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsMyRun.Tests", "Testing\WhatsMyRun.Tests\WhatsMyRun.Tests.csproj", "{8B2A9A4C-F92A-454C-85D4-8569846D88AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsMyRun.Services.Tests", "Testing\WhatsMyRun.Tests\WhatsMyRun.Services.Tests.csproj", "{8B2A9A4C-F92A-454C-85D4-8569846D88AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
