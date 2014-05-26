@@ -10,14 +10,84 @@ using System.Linq;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using WhatsMyRun.DataModel.Workouts;
+using Newtonsoft.Json;
 
 namespace WhatsMyRun.Tests
 {
     [TestClass]
     public class WorkoutDataProviderTest
     {
-        private static const string dataLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\SampleWorkoutsData.json";
-        
+        static Moq.Mock<IDataRequestor> mockRequestor = new Moq.Mock<IDataRequestor>();
+        static IEnumerable<WorkoutDataModel> workouts;
+        private static readonly string dataLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\SampleWorkoutsData.json";
+
+        [ClassInitialize]
+        public static void ClassInitialize(TestContext context)
+        {
+            //ARRANGE
+            var mockedData = File.ReadAllText(dataLocation);
+            var provider = new WorkoutDataProvider(mockRequestor.Object);
+            mockRequestor.Setup(r => r.GetDataAsync(It.IsAny<Uri>()))
+                .Returns(Task.FromResult(mockedData));
+
+            //To see the test fail, bring back this line:
+            mockRequestor.Setup(r => r.GetDataAsync(new Uri("http://test.com")))
+                .Returns(Task.FromResult(mockedData));
+
+            //ACT
+            workouts = provider.GetWorkoutsForUserAsync(1).Result;
+        }
+
+
+        [TestMethod]
+        public void GetDataAsync_MultipleWorkouts_20Results()
+        {
+            Assert.AreEqual(20, workouts.Count());
+        }
+
+        [TestMethod]
+        public void GetDataAsync_Default_WorkoutDataParsed()
+        {
+            foreach (var workout in workouts)
+            {
+                Assert.IsTrue(workout.ActiveTimeInSeconds > 0, "ActiveTimeInSeconds not set");
+                Assert.IsTrue(workout.AverageSpeedInX > 0, "AverageSpeedInX not set");
+                Assert.IsTrue(workout.DistanceInMeters > 0, "DistanceInMeters not set");
+                Assert.IsTrue(workout.ElapsedTimeInSeconds.Seconds > 0, "ElapsedTimeInSeconds not set");
+                Assert.IsTrue(workout.MetabolicEnergeyTotal > 0, "MetabolicEnergeyTotal not set");
+                Assert.IsTrue(workout.StartTime > DateTime.Parse("1/1/2010"));
+                Assert.IsTrue(workout.TotalSteps > 0);
+            }
+
+            //notes was only set on the first of the test data, just assert that:
+            Assert.IsFalse(String.IsNullOrWhiteSpace(workouts.First().Notes), "Notes not set");
+        }
+
+        [TestMethod]
+        public async Task GetDataAsync_Malformed_ThrowsException()
+        {
+            //ARRANGE
+            var mockRequestor = new Moq.Mock<IDataRequestor>();
+            var mockedMalformedData = "<x></x>";
+            var provider = new WorkoutDataProvider(mockRequestor.Object);
+            mockRequestor.Setup(r => r.GetDataAsync(It.IsAny<Uri>()))
+                .Returns(Task.FromResult(mockedMalformedData));
+
+            //ACT
+            try
+            {
+                await provider.GetWorkoutsForUserAsync(1);
+                Assert.Fail("no ex thrown");
+            }
+            catch (JsonReaderException ex)
+            {
+                var exMessage = ex.Message;
+                //malformed data exception
+            }
+
+        }
+
+
         [TestMethod]
         public async Task GetDataAsync_Default_CallsRequestor()
         {
