@@ -38,6 +38,7 @@
     <Content Include="MapMyRun\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\JTokenExtensions.cs" />
     <Compile Include="DataProviders\Workouts\IWorkoutDataProvider.cs" />
     <Compile Include="DataProviders\Workouts\WorkoutDataProvider.cs" />
     <Compile Include="DataRequestor\IDataRequestor.cs" />
