@@ -12,7 +12,7 @@
     },
     "_embedded": {
         "workouts": [{
-            "start_datetime": "2010-05-22T17:00:00+00:00",
+            "start_datetime": "2010-05-22T19:08:23+00:00",
             "name": "Regular Run",
             "updated_datetime": "2010-05-26T17:55:21+00:00",
             "created_datetime": "2010-05-26T17:55:21+00:00",
@@ -47,9 +47,9 @@
             "aggregates": {
                 "active_time_total": 1020.0,
                 "distance_total": 2591.04384,
-                "steps_total": 0.0,
+                "steps_total": 200.0,
                 "speed_avg": 2.548128,
-                "elapsed_time_total": 1020.0,
+                "elapsed_time_total": 1025.0,
                 "metabolic_energy_total": 849352.0
             }
         }, {
