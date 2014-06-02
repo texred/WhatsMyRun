@@ -17,50 +17,54 @@ namespace WhatsMyRun.Tests
     [TestClass]
     public class WorkoutDataProviderTest
     {
-        static Moq.Mock<IDataRequestor> mockRequestor = new Moq.Mock<IDataRequestor>();
-        static IEnumerable<WorkoutDataModel> workouts;
         private static readonly string dataLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\SampleWorkoutsData.json";
 
         [ClassInitialize]
         public static void ClassInitialize(TestContext context)
         {
+
+        }
+
+        [TestMethod]
+        public async Task GetDataAsync_Default_WorkoutDataParsed()
+        {
             //ARRANGE
-            var mockedData = File.ReadAllText(dataLocation);
+            var mockRequestor = new Moq.Mock<IDataRequestor>();
+            var mockedData = GetSingleWorkoutDataString();
+            mockedData = File.ReadAllText(dataLocation);
+
             var provider = new WorkoutDataProvider(mockRequestor.Object);
             mockRequestor.Setup(r => r.GetDataAsync(It.IsAny<Uri>()))
                 .Returns(Task.FromResult(mockedData));
 
-            //To see the test fail, bring back this line:
-            mockRequestor.Setup(r => r.GetDataAsync(new Uri("http://test.com")))
-                .Returns(Task.FromResult(mockedData));
-
             //ACT
-            workouts = provider.GetWorkoutsForUserAsync(1).Result;
-        }
-
-
-        [TestMethod]
-        public void GetDataAsync_MultipleWorkouts_20Results()
-        {
-            Assert.AreEqual(20, workouts.Count());
-        }
-
-        [TestMethod]
-        public void GetDataAsync_Default_WorkoutDataParsed()
-        {
+            var workouts = await provider.GetWorkoutsForUserAsync(1);
+                        
+            //started to parse the data for ALL workouts, but not all workouts have this data
+            //(ie workout #20 doesn't have AverageSpeedInX
             foreach (var workout in workouts)
             {
-                Assert.IsTrue(workout.ActiveTimeInSeconds > 0, "ActiveTimeInSeconds not set");
-                Assert.IsTrue(workout.AverageSpeedInX > 0, "AverageSpeedInX not set");
+                //Assert.IsTrue(workout.ActiveTimeInSeconds > 0, "ActiveTimeInSeconds not set");
+                //Assert.IsTrue(workout.AverageSpeedInX > 0, "AverageSpeedInX not set");
                 Assert.IsTrue(workout.DistanceInMeters > 0, "DistanceInMeters not set");
-                Assert.IsTrue(workout.ElapsedTimeInSeconds.Seconds > 0, "ElapsedTimeInSeconds not set");
-                Assert.IsTrue(workout.MetabolicEnergeyTotal > 0, "MetabolicEnergeyTotal not set");
+                //Assert.IsTrue(workout.ElapsedTimeInSeconds.Seconds > 0, "ElapsedTimeInSeconds not set");
+                //Assert.IsTrue(workout.MetabolicEnergeyTotal > 0, "MetabolicEnergeyTotal not set");
                 Assert.IsTrue(workout.StartTime > DateTime.Parse("1/1/2010"));
-                Assert.IsTrue(workout.TotalSteps > 0);
             }
 
-            //notes was only set on the first of the test data, just assert that:
-            Assert.IsFalse(String.IsNullOrWhiteSpace(workouts.First().Notes), "Notes not set");
+            var firstWorkout = workouts.First();
+            //Certain property are only set on the first of the test data, just assert that:
+            Assert.AreEqual(1020.0, firstWorkout.ActiveTimeInSeconds);
+            Assert.AreEqual(2.548128, firstWorkout.AverageSpeedInX);
+            Assert.AreEqual(2591.04384, firstWorkout.DistanceInMeters);
+            Assert.AreEqual(1025.0, firstWorkout.ElapsedTimeInSeconds.TotalSeconds);
+            Assert.AreEqual(849352.0, firstWorkout.MetabolicEnergeyTotal);
+            Assert.AreEqual("test notes", firstWorkout.Notes);
+            Assert.AreEqual(DateTime.Parse("2010-05-22T14:08:23"), firstWorkout.StartTime);
+            Assert.AreEqual(200, firstWorkout.TotalSteps);
+
+            //Wanted this in a sep test, but with async, I couldn't figure out how to have the work done in ClassInitialize
+            Assert.AreEqual(20, workouts.Count(), "workout count differs");
         }
 
         [TestMethod]
@@ -98,9 +102,9 @@ namespace WhatsMyRun.Tests
             mockRequestor.Setup(r => r.GetDataAsync(It.IsAny<Uri>()))
                 .Returns(Task.FromResult(mockedData));
 
-            //To see the test fail, bring back this line:
-            mockRequestor.Setup(r => r.GetDataAsync(new Uri("http://test.com")))
-                .Returns(Task.FromResult(mockedData));
+            ////To see the test fail, bring back this line:
+            //mockRequestor.Setup(r => r.GetDataAsync(new Uri("http://test.com")))
+            //    .Returns(Task.FromResult(mockedData));
 
             //ACT
             await provider.GetWorkoutsForUserAsync(1);
