@@ -1,0 +1,588 @@
+﻿{
+    "_links": {
+        "self": [{
+            "href": "\/v7.0\/workout\/?started_after=2014-06-01&offset=0&limit=20&user=3217681&activity_type=16"
+        }],
+        "documentation": [{
+            "href": "https:\/\/www.mapmyapi.com\/docs\/Workout"
+        }]
+    },
+    "_embedded": {
+        "workouts": [{
+            "start_datetime": "2014-06-01T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-02T04:26:01+00:00",
+            "created_datetime": "2014-06-02T04:26:01+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/591825953\/",
+                    "id": "591825953"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 985.0,
+                "elapsed_time_total": 0.0,
+                "distance_total": 3218.688,
+                "speed_avg": 3.2678624,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-03T05:00:00+00:00",
+            "name": "Run \/ Jog on June 3, 2014",
+            "updated_datetime": "2014-06-03T13:06:05+00:00",
+            "created_datetime": "2014-06-03T13:06:05+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/593607627\/",
+                    "id": "593607627"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/433466494\/",
+                    "id": "433466494"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": true,
+            "aggregates": {
+                "active_time_total": 2050.0,
+                "elapsed_time_total": 2050.0,
+                "distance_total": 6639.62226048,
+                "speed_avg": 3.2388401271
+            }
+        }, {
+            "start_datetime": "2014-06-04T13:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-05T03:36:27+00:00",
+            "created_datetime": "2014-06-04T12:37:08+00:00",
+            "notes": "Started slow, then ramped up. Good day for a run",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/595012293\/",
+                    "id": "595012293"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/434487170\/",
+                    "id": "434487170"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 3180.0,
+                "elapsed_time_total": 3180.0,
+                "distance_total": 9688.25088,
+                "speed_avg": 3.0488128,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-07T05:00:00+00:00",
+            "name": "Run \/ Jog on June 7, 2014",
+            "updated_datetime": "2014-06-08T02:24:34+00:00",
+            "created_datetime": "2014-06-08T02:24:34+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/599514875\/",
+                    "id": "599514875"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/437911084\/",
+                    "id": "437911084"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": true,
+            "aggregates": {
+                "active_time_total": 5740.0,
+                "elapsed_time_total": 5740.0,
+                "distance_total": 15802.6315392,
+                "speed_avg": 2.7530716967
+            }
+        }, {
+            "start_datetime": "2014-06-08T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-28T00:17:38+00:00",
+            "created_datetime": "2014-06-28T00:17:38+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/624690257\/",
+                    "id": "624690257"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 985.0,
+                "elapsed_time_total": 0.0,
+                "distance_total": 3218.688,
+                "speed_avg": 3.2678624,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-09T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-09T11:13:44+00:00",
+            "created_datetime": "2014-06-09T11:13:44+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/600950745\/",
+                    "id": "600950745"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/438986614\/",
+                    "id": "438986614"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 998.0,
+                "elapsed_time_total": 0.0,
+                "distance_total": 3250.87488,
+                "speed_avg": 3.2573882528,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-09T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-09T11:13:44+00:00",
+            "created_datetime": "2014-06-09T11:13:44+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/600950745\/",
+                    "id": "600950745"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/438986614\/",
+                    "id": "438986614"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 998.0,
+                "elapsed_time_total": 0.0,
+                "distance_total": 3250.87488,
+                "speed_avg": 3.2573882528,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-09T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-09T11:13:44+00:00",
+            "created_datetime": "2014-06-09T11:13:44+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/600950745\/",
+                    "id": "600950745"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/438986614\/",
+                    "id": "438986614"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 998.0,
+                "elapsed_time_total": 0.0,
+                "distance_total": 3250.87488,
+                "speed_avg": 3.2573882528,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-09T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-09T11:13:44+00:00",
+            "created_datetime": "2014-06-09T11:13:44+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/600950745\/",
+                    "id": "600950745"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/438986614\/",
+                    "id": "438986614"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 998.0,
+                "elapsed_time_total": 0.0,
+                "distance_total": 3250.87488,
+                "speed_avg": 3.2573882528,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-11T11:30:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-12T03:16:14+00:00",
+            "created_datetime": "2014-06-12T03:16:14+00:00",
+            "notes": "Went well :)",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/604784555\/",
+                    "id": "604784555"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/441761046\/",
+                    "id": "441761046"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 2867.0,
+                "elapsed_time_total": 19800.0,
+                "distance_total": 9672.15744,
+                "speed_avg": 3.375152,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-14T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-28T00:16:35+00:00",
+            "created_datetime": "2014-06-28T00:16:35+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/624689171\/",
+                    "id": "624689171"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 5740.0,
+                "elapsed_time_total": 0.0,
+                "distance_total": 15771.5712,
+                "speed_avg": 2.749296,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-15T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-28T00:17:09+00:00",
+            "created_datetime": "2014-06-28T00:17:09+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/624689817\/",
+                    "id": "624689817"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 1000.0,
+                "elapsed_time_total": 0.0,
+                "distance_total": 3218.688,
+                "speed_avg": 3.218688,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-21T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-28T00:14:55+00:00",
+            "created_datetime": "2014-06-28T00:14:55+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/624687663\/",
+                    "id": "624687663"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 6840.0,
+                "elapsed_time_total": 0.0,
+                "distance_total": 19312.128,
+                "speed_avg": 2.8252928,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-25T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-28T00:15:42+00:00",
+            "created_datetime": "2014-06-28T00:15:20+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/624688031\/",
+                    "id": "624688031"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 3240.0,
+                "elapsed_time_total": 3600.0,
+                "distance_total": 9656.064,
+                "speed_avg": 2.9817568,
+                "steps_total": 0.0
+            }
+        }, {
+            "start_datetime": "2014-06-28T17:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-06-28T13:00:11+00:00",
+            "created_datetime": "2014-06-28T13:00:11+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/625123737\/",
+                    "id": "625123737"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/456738556\/",
+                    "id": "456738556"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 5880.0,
+                "elapsed_time_total": 0.0,
+                "distance_total": 16945.7485824,
+                "speed_avg": 2.881930031,
+                "steps_total": 0.0
+            }
+        }]
+    },
+    "total_count": 15
+}

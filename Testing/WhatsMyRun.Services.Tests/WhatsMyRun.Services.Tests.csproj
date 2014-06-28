@@ -63,6 +63,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="WorkoutDataModelTest.cs" />
     <Compile Include="WorkoutDataProviderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -80,6 +81,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="SampleRunDataFromJune.json" />
     <None Include="SampleWorkoutsData.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
