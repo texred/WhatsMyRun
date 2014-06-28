@@ -1,201 +1,37 @@
 ﻿{
     "_links": {
         "self": [{
-            "href": "\/v7.0\/workout\/?limit=20&user=3217681&offset=0"
+            "href": "\/v7.0\/workout\/?started_after=2014-01-01&offset=0&limit=20&user=3217681&activity_type=16"
         }],
         "documentation": [{
             "href": "https:\/\/www.mapmyapi.com\/docs\/Workout"
         }],
         "next": [{
-            "href": "\/v7.0\/workout\/?limit=20&user=3217681&offset=20"
+            "href": "\/v7.0\/workout\/?started_after=2014-01-01&offset=20&limit=20&user=3217681&activity_type=16"
         }]
     },
     "_embedded": {
         "workouts": [{
-            "start_datetime": "2010-05-22T19:08:23+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-05-26T17:55:21+00:00",
-            "created_datetime": "2010-05-26T17:55:21+00:00",
-            "notes": "test notes",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/23495192\/",
-                    "id": "23495192"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/17569118\/",
-                    "id": "17569118"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 1020.0,
-                "distance_total": 2591.04384,
-                "steps_total": 200.0,
-                "speed_avg": 2.548128,
-                "elapsed_time_total": 1025.0,
-                "metabolic_energy_total": 849352.0
-            }
-        }, {
-            "start_datetime": "2010-05-25T12:39:53+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-05-25T12:39:53+00:00",
-            "created_datetime": "2010-05-25T12:39:53+00:00",
+            "start_datetime": "2014-01-26T18:00:00+00:00",
+            "name": "Ryan's Winter Run in the the SNOW",
+            "updated_datetime": "2014-01-27T13:40:03+00:00",
+            "created_datetime": "2014-01-27T13:40:03+00:00",
             "notes": "",
             "reference_key": null,
             "start_locale_timezone": "US\/Central",
             "source": null,
             "_links": {
                 "self": [{
-                    "href": "\/v7.0\/workout\/23420290\/",
-                    "id": "23420290"
+                    "href": "\/v7.0\/workout\/471540653\/",
+                    "id": "471540653"
                 }],
                 "route": [{
-                    "href": "\/v7.0\/route\/17506486\/",
-                    "id": "17506486"
+                    "href": "\/v7.0\/route\/351124117\/",
+                    "id": "351124117"
                 }],
                 "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 3120.0,
-                "distance_total": 7596.10368,
-                "steps_total": 0.0,
-                "speed_avg": 2.414016,
-                "elapsed_time_total": 3120.0,
-                "metabolic_energy_total": 2594080.0
-            }
-        }, {
-            "start_datetime": "2010-05-29T12:31:41+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-05-29T12:31:41+00:00",
-            "created_datetime": "2010-05-29T12:31:41+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/23623296\/",
-                    "id": "23623296"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/17677530\/",
-                    "id": "17677530"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 2100.0,
-                "distance_total": 4956.77952,
-                "steps_total": 0.0,
-                "speed_avg": 2.369312,
-                "elapsed_time_total": 2100.0,
-                "metabolic_energy_total": 1748912.0
-            }
-        }, {
-            "start_datetime": "2010-05-29T13:47:51+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-05-29T13:47:51+00:00",
-            "created_datetime": "2010-05-29T13:47:51+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/23626656\/",
-                    "id": "23626656"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/17677530\/",
-                    "id": "17677530"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 1200.0,
-                "distance_total": 2816.352,
-                "steps_total": 0.0,
-                "speed_avg": 2.369312,
-                "elapsed_time_total": 1200.0,
-                "metabolic_energy_total": 999976.0
-            }
-        }, {
-            "start_datetime": "2010-05-31T17:00:00+00:00",
-            "name": "General Road Cycling",
-            "updated_datetime": "2010-05-31T03:42:34+00:00",
-            "created_datetime": "2010-05-31T03:42:34+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/23709744\/",
-                    "id": "23709744"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/17754696\/",
-                    "id": "17754696"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/36\/",
-                    "id": "36"
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
                 }],
                 "user": [{
                     "href": "\/v7.0\/user\/3217681\/",
@@ -210,74 +46,115 @@
             "is_verified": false,
             "aggregates": {
                 "active_time_total": 3600.0,
-                "distance_total": 20921.472,
-                "steps_total": 0.0,
-                "speed_avg": 5.81152,
-                "elapsed_time_total": 3600.0,
-                "metabolic_energy_total": 2397432.0
-            }
-        }, {
-            "start_datetime": "2010-06-06T16:05:11+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-06-06T16:05:11+00:00",
-            "created_datetime": "2010-06-06T16:05:11+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/24036370\/",
-                    "id": "24036370"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/18044962\/",
-                    "id": "18044962"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 3180.0,
                 "distance_total": 8384.68224,
                 "steps_total": 0.0,
-                "speed_avg": 2.637536,
-                "elapsed_time_total": 3180.0,
-                "metabolic_energy_total": 2644288.0
+                "speed_avg": 2.3290784,
+                "elapsed_time_total": 3600.0,
+                "metabolic_energy_total": 2953904.0
             }
         }, {
-            "start_datetime": "2010-06-12T19:10:20+00:00",
-            "name": "General Road Cycling",
-            "updated_datetime": "2010-06-12T19:10:20+00:00",
-            "created_datetime": "2010-06-12T19:10:20+00:00",
+            "start_datetime": "2014-02-16T14:42:34+00:00",
+            "name": "MapMyRUN Feb 16, 2014 11:30 AM",
+            "updated_datetime": "2014-02-16T17:30:14+00:00",
+            "created_datetime": "2014-02-16T17:30:14+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "MapMyRUN Blackberry",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/485298513\/",
+                    "id": "485298513"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/359087475\/",
+                    "id": "359087475"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": true,
+            "aggregates": {
+                "active_time_total": 6457.0,
+                "distance_total": 9053.21983104,
+                "steps_total": 0.0,
+                "speed_avg": 1.4020783744,
+                "elapsed_time_total": 6457.0,
+                "metabolic_energy_total": 2025056.0
+            }
+        }, {
+            "start_datetime": "2014-02-17T11:02:09+00:00",
+            "name": "MapMyRUN Feb 17, 2014 6:57 AM",
+            "updated_datetime": "2014-02-17T12:57:11+00:00",
+            "created_datetime": "2014-02-17T12:57:11+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "MapMyRUN Blackberry",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/485898093\/",
+                    "id": "485898093"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/359465425\/",
+                    "id": "359465425"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": true,
+            "aggregates": {
+                "active_time_total": 3302.0,
+                "distance_total": 2758.43170944,
+                "steps_total": 0.0,
+                "speed_avg": 0.835383648,
+                "elapsed_time_total": 3302.0,
+                "metabolic_energy_total": 732200.0
+            }
+        }, {
+            "start_datetime": "2014-02-19T13:54:49+00:00",
+            "name": "Run",
+            "updated_datetime": "2014-02-19T13:54:49+00:00",
+            "created_datetime": "2014-02-19T13:54:49+00:00",
             "notes": "",
             "reference_key": null,
             "start_locale_timezone": "US\/Central",
             "source": null,
             "_links": {
                 "self": [{
-                    "href": "\/v7.0\/workout\/24358698\/",
-                    "id": "24358698"
+                    "href": "\/v7.0\/workout\/487665935\/",
+                    "id": "487665935"
                 }],
                 "route": [{
-                    "href": "\/v7.0\/route\/18315704\/",
-                    "id": "18315704"
+                    "href": "\/v7.0\/route\/360515883\/",
+                    "id": "360515883"
                 }],
                 "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/36\/",
-                    "id": "36"
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
                 }],
                 "user": [{
                     "href": "\/v7.0\/user\/3217681\/",
@@ -291,34 +168,34 @@
             "has_time_series": false,
             "is_verified": false,
             "aggregates": {
-                "active_time_total": 2100.0,
-                "distance_total": 11442.43584,
+                "active_time_total": 3600.0,
+                "distance_total": 8368.5888,
                 "steps_total": 0.0,
-                "speed_avg": 5.453888,
-                "elapsed_time_total": 2100.0,
-                "metabolic_energy_total": 1397456.0
+                "speed_avg": 2.324608,
+                "elapsed_time_total": 3600.0,
+                "metabolic_energy_total": 2962272.0
             }
         }, {
-            "start_datetime": "2010-06-12T19:54:47+00:00",
-            "name": "General Road Cycling",
-            "updated_datetime": "2010-06-12T19:54:47+00:00",
-            "created_datetime": "2010-06-12T19:54:47+00:00",
+            "start_datetime": "2014-02-20T11:24:32+00:00",
+            "name": "MapMyRUN Feb 20, 2014 6:37 AM",
+            "updated_datetime": "2014-02-20T12:37:39+00:00",
+            "created_datetime": "2014-02-20T12:37:39+00:00",
             "notes": "",
             "reference_key": null,
             "start_locale_timezone": "US\/Central",
-            "source": null,
+            "source": "MapMyRUN Blackberry",
             "_links": {
                 "self": [{
-                    "href": "\/v7.0\/workout\/24360154\/",
-                    "id": "24360154"
+                    "href": "\/v7.0\/workout\/488454525\/",
+                    "id": "488454525"
                 }],
                 "route": [{
-                    "href": "\/v7.0\/route\/18316982\/",
-                    "id": "18316982"
+                    "href": "\/v7.0\/route\/361007187\/",
+                    "id": "361007187"
                 }],
                 "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/36\/",
-                    "id": "36"
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
                 }],
                 "user": [{
                     "href": "\/v7.0\/user\/3217681\/",
@@ -330,36 +207,36 @@
                 }]
             },
             "has_time_series": false,
-            "is_verified": false,
+            "is_verified": true,
             "aggregates": {
-                "active_time_total": 8400.0,
-                "distance_total": 41199.2064,
+                "active_time_total": 786.0,
+                "distance_total": 1232.987640192,
                 "steps_total": 0.0,
-                "speed_avg": 4.91744,
-                "elapsed_time_total": 8400.0,
-                "metabolic_energy_total": 4192368.0
+                "speed_avg": 1.568685712,
+                "elapsed_time_total": 786.0,
+                "metabolic_energy_total": 271960.0
             }
         }, {
-            "start_datetime": "2010-06-21T18:43:46+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-06-21T18:43:46+00:00",
-            "created_datetime": "2010-06-21T18:43:46+00:00",
+            "start_datetime": "2014-02-23T14:44:40+00:00",
+            "name": "MapMyRUN Feb 23, 2014 10:30 AM",
+            "updated_datetime": "2014-02-23T16:30:36+00:00",
+            "created_datetime": "2014-02-23T16:30:36+00:00",
             "notes": "",
             "reference_key": null,
             "start_locale_timezone": "US\/Central",
-            "source": null,
+            "source": "MapMyRUN Blackberry",
             "_links": {
                 "self": [{
-                    "href": "\/v7.0\/workout\/24826020\/",
-                    "id": "24826020"
+                    "href": "\/v7.0\/workout\/490894771\/",
+                    "id": "490894771"
                 }],
                 "route": [{
-                    "href": "\/v7.0\/route\/18721042\/",
-                    "id": "18721042"
+                    "href": "\/v7.0\/route\/362627763\/",
+                    "id": "362627763"
                 }],
                 "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
                 }],
                 "user": [{
                     "href": "\/v7.0\/user\/3217681\/",
@@ -371,323 +248,32 @@
                 }]
             },
             "has_time_series": false,
-            "is_verified": false,
+            "is_verified": true,
             "aggregates": {
-                "active_time_total": 1500.0,
-                "distance_total": 3975.07968,
+                "active_time_total": 2755.0,
+                "distance_total": 6336.69543936,
                 "steps_total": 0.0,
-                "speed_avg": 2.637536,
-                "elapsed_time_total": 1500.0,
-                "metabolic_energy_total": 1246832.0
-            }
-        }, {
-            "start_datetime": "2010-06-26T14:18:18+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-06-26T14:18:18+00:00",
-            "created_datetime": "2010-06-26T14:18:18+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/25083776\/",
-                    "id": "25083776"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/18940806\/",
-                    "id": "18940806"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 3360.0,
-                "distance_total": 8819.20512,
-                "steps_total": 0.0,
-                "speed_avg": 2.637536,
-                "elapsed_time_total": 3360.0,
-                "metabolic_energy_total": 2794912.0
-            }
-        }, {
-            "start_datetime": "2010-07-01T17:33:42+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-07-01T17:33:42+00:00",
-            "created_datetime": "2010-07-01T17:33:42+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/25378970\/",
-                    "id": "25378970"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/19187104\/",
-                    "id": "19187104"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 3720.0,
-                "distance_total": 9495.1296,
-                "steps_total": 0.0,
-                "speed_avg": 2.548128,
-                "elapsed_time_total": 3720.0,
-                "metabolic_energy_total": 3096160.0
-            }
-        }, {
-            "start_datetime": "2010-07-09T00:17:15+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-07-09T00:17:15+00:00",
-            "created_datetime": "2010-07-09T00:17:15+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/25821536\/",
-                    "id": "25821536"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/19553430\/",
-                    "id": "19553430"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 1380.0,
-                "distance_total": 3765.86496,
-                "steps_total": 0.0,
-                "speed_avg": 2.726944,
-                "elapsed_time_total": 1380.0,
-                "metabolic_energy_total": 1263568.0
-            }
-        }, {
-            "start_datetime": "2010-07-10T17:00:00+00:00",
-            "name": "General Road Cycling",
-            "updated_datetime": "2010-07-11T23:26:56+00:00",
-            "created_datetime": "2010-07-11T23:18:53+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/25994622\/",
-                    "id": "25994622"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/19699336\/",
-                    "id": "19699336"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/36\/",
-                    "id": "36"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 8940.0,
-                "distance_total": 48280.32,
-                "steps_total": 0.0,
-                "speed_avg": 5.409184,
-                "elapsed_time_total": 8940.0,
-                "metabolic_energy_total": 5949648.0
-            }
-        }, {
-            "start_datetime": "2010-07-10T17:00:00+00:00",
-            "name": "General Road Cycling",
-            "updated_datetime": "2010-07-11T23:25:46+00:00",
-            "created_datetime": "2010-07-11T23:25:46+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/25994998\/",
-                    "id": "25994998"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/19699738\/",
-                    "id": "19699738"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/36\/",
-                    "id": "36"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 2100.0,
-                "distance_total": 11876.95872,
-                "steps_total": 0.0,
-                "speed_avg": 5.677408,
-                "elapsed_time_total": 2100.0,
-                "metabolic_energy_total": 1426744.0
-            }
-        }, {
-            "start_datetime": "2010-07-11T23:23:31+00:00",
-            "name": "General Road Cycling",
-            "updated_datetime": "2010-07-11T23:23:31+00:00",
-            "created_datetime": "2010-07-11T23:23:31+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/25994882\/",
-                    "id": "25994882"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/19699602\/",
-                    "id": "19699602"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/36\/",
-                    "id": "36"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 6000.0,
-                "distance_total": 44117.4298752,
-                "steps_total": 0.0,
-                "speed_avg": 7.37616,
-                "elapsed_time_total": 6000.0,
-                "metabolic_energy_total": 6121192.0
-            }
-        }, {
-            "start_datetime": "2010-08-24T02:15:38+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-08-24T02:15:38+00:00",
-            "created_datetime": "2010-08-24T02:15:38+00:00",
-            "notes": "",
-            "reference_key": null,
-            "start_locale_timezone": "US\/Central",
-            "source": null,
-            "_links": {
-                "self": [{
-                    "href": "\/v7.0\/workout\/28713104\/",
-                    "id": "28713104"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/21908644\/",
-                    "id": "21908644"
-                }],
-                "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
-                }],
-                "user": [{
-                    "href": "\/v7.0\/user\/3217681\/",
-                    "id": "3217681"
-                }],
-                "privacy": [{
-                    "href": "\/v7.0\/privacy_option\/1\/",
-                    "id": "1"
-                }]
-            },
-            "has_time_series": false,
-            "is_verified": false,
-            "aggregates": {
-                "active_time_total": 2640.0,
-                "distance_total": 6485.65632,
-                "steps_total": 0.0,
-                "speed_avg": 2.45872,
-                "elapsed_time_total": 2640.0,
+                "speed_avg": 2.3000699744,
+                "elapsed_time_total": 2755.0,
                 "metabolic_energy_total": 2196600.0
             }
         }, {
-            "start_datetime": "2010-08-28T17:00:00+00:00",
-            "name": "General Road Cycling",
-            "updated_datetime": "2010-08-29T19:04:49+00:00",
-            "created_datetime": "2010-08-29T19:04:49+00:00",
+            "start_datetime": "2014-02-25T18:00:00+00:00",
+            "name": "",
+            "updated_datetime": "2014-03-02T13:37:05+00:00",
+            "created_datetime": "2014-03-02T13:37:05+00:00",
             "notes": "",
             "reference_key": null,
             "start_locale_timezone": "US\/Central",
             "source": null,
             "_links": {
                 "self": [{
-                    "href": "\/v7.0\/workout\/29041704\/",
-                    "id": "29041704"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/22197226\/",
-                    "id": "22197226"
+                    "href": "\/v7.0\/workout\/496234249\/",
+                    "id": "496234249"
                 }],
                 "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/36\/",
-                    "id": "36"
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
                 }],
                 "user": [{
                     "href": "\/v7.0\/user\/3217681\/",
@@ -701,34 +287,34 @@
             "has_time_series": false,
             "is_verified": false,
             "aggregates": {
-                "active_time_total": 8400.0,
-                "distance_total": 41440.608,
+                "active_time_total": 1920.0,
+                "distance_total": 4988.9664,
                 "steps_total": 0.0,
-                "speed_avg": 4.91744,
-                "elapsed_time_total": 8400.0,
-                "metabolic_energy_total": 5230000.0
+                "speed_avg": 2.5973024,
+                "elapsed_time_total": 1920.0,
+                "metabolic_energy_total": 1715440.0
             }
         }, {
-            "start_datetime": "2010-08-29T19:03:38+00:00",
-            "name": "General Road Cycling",
-            "updated_datetime": "2010-08-29T19:03:38+00:00",
-            "created_datetime": "2010-08-29T19:03:38+00:00",
+            "start_datetime": "2014-03-01T13:20:30+00:00",
+            "name": "MapMyRUN Mar 1, 2014 9:10 AM",
+            "updated_datetime": "2014-03-01T15:10:54+00:00",
+            "created_datetime": "2014-03-01T15:10:54+00:00",
             "notes": "",
             "reference_key": null,
             "start_locale_timezone": "US\/Central",
-            "source": null,
+            "source": "MapMyRUN Blackberry",
             "_links": {
                 "self": [{
-                    "href": "\/v7.0\/workout\/29041622\/",
-                    "id": "29041622"
+                    "href": "\/v7.0\/workout\/495533971\/",
+                    "id": "495533971"
                 }],
                 "route": [{
-                    "href": "\/v7.0\/route\/22197226\/",
-                    "id": "22197226"
+                    "href": "\/v7.0\/route\/365358489\/",
+                    "id": "365358489"
                 }],
                 "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/36\/",
-                    "id": "36"
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
                 }],
                 "user": [{
                     "href": "\/v7.0\/user\/3217681\/",
@@ -740,36 +326,32 @@
                 }]
             },
             "has_time_series": false,
-            "is_verified": false,
+            "is_verified": true,
             "aggregates": {
-                "active_time_total": 8100.0,
-                "distance_total": 41440.608,
+                "active_time_total": 3021.0,
+                "distance_total": 6808.58728704,
                 "steps_total": 0.0,
-                "speed_avg": 5.14096,
-                "elapsed_time_total": 8100.0,
-                "metabolic_energy_total": 5439200.0
+                "speed_avg": 2.25375216,
+                "elapsed_time_total": 3021.0,
+                "metabolic_energy_total": 2263544.0
             }
         }, {
-            "start_datetime": "2010-10-16T19:10:09+00:00",
-            "name": "General Road Cycling",
-            "updated_datetime": "2010-10-16T19:10:09+00:00",
-            "created_datetime": "2010-10-16T19:10:09+00:00",
+            "start_datetime": "2014-03-02T14:07:34+00:00",
+            "name": "",
+            "updated_datetime": "2014-03-02T14:07:34+00:00",
+            "created_datetime": "2014-03-02T14:07:34+00:00",
             "notes": "",
             "reference_key": null,
             "start_locale_timezone": "US\/Central",
             "source": null,
             "_links": {
                 "self": [{
-                    "href": "\/v7.0\/workout\/31660742\/",
-                    "id": "31660742"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/24367940\/",
-                    "id": "24367940"
+                    "href": "\/v7.0\/workout\/496253951\/",
+                    "id": "496253951"
                 }],
                 "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/36\/",
-                    "id": "36"
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
                 }],
                 "user": [{
                     "href": "\/v7.0\/user\/3217681\/",
@@ -783,34 +365,30 @@
             "has_time_series": false,
             "is_verified": false,
             "aggregates": {
-                "active_time_total": 8400.0,
-                "distance_total": 37851.77088,
+                "active_time_total": 1756.0,
+                "distance_total": 4988.9664,
                 "steps_total": 0.0,
-                "speed_avg": 4.515104,
-                "elapsed_time_total": 8400.0,
-                "metabolic_energy_total": 4192368.0
+                "speed_avg": 2.8431744,
+                "elapsed_time_total": 1756.0,
+                "metabolic_energy_total": 1686152.0
             }
         }, {
-            "start_datetime": "2010-10-16T15:01:50+00:00",
-            "name": "Regular Run",
-            "updated_datetime": "2010-10-16T15:01:50+00:00",
-            "created_datetime": "2010-10-16T15:01:50+00:00",
+            "start_datetime": "2014-03-03T12:45:51+00:00",
+            "name": "",
+            "updated_datetime": "2014-03-03T12:45:51+00:00",
+            "created_datetime": "2014-03-03T12:45:51+00:00",
             "notes": "",
             "reference_key": null,
             "start_locale_timezone": "US\/Central",
             "source": null,
             "_links": {
                 "self": [{
-                    "href": "\/v7.0\/workout\/31646668\/",
-                    "id": "31646668"
-                }],
-                "route": [{
-                    "href": "\/v7.0\/route\/24355886\/",
-                    "id": "24355886"
+                    "href": "\/v7.0\/workout\/496986435\/",
+                    "id": "496986435"
                 }],
                 "activity_type": [{
-                    "href": "\/v7.0\/activity_type\/118\/",
-                    "id": "118"
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
                 }],
                 "user": [{
                     "href": "\/v7.0\/user\/3217681\/",
@@ -824,12 +402,420 @@
             "has_time_series": false,
             "is_verified": false,
             "aggregates": {
-                "active_time_total": 0.0,
+                "active_time_total": 1664.0,
+                "distance_total": 4988.9664,
                 "steps_total": 0.0,
-                "distance_total": 4200.38784,
-                "metabolic_energy_total": 0.0
+                "speed_avg": 2.9996384,
+                "elapsed_time_total": 1664.0,
+                "metabolic_energy_total": 1673600.0
+            }
+        }, {
+            "start_datetime": "2014-03-05T13:15:54+00:00",
+            "name": "jog",
+            "updated_datetime": "2014-03-05T13:15:54+00:00",
+            "created_datetime": "2014-03-05T13:15:54+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "MMF Internal Use Only",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/498520483\/",
+                    "id": "498520483"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/367127015\/",
+                    "id": "367127015"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 1980.0,
+                "distance_total": 4964.40781056,
+                "steps_total": 0.0,
+                "speed_avg": 2.5072774848,
+                "elapsed_time_total": 1980.0,
+                "metabolic_energy_total": 1719624.0
+            }
+        }, {
+            "start_datetime": "2014-03-08T14:36:11+00:00",
+            "name": "",
+            "updated_datetime": "2014-03-08T14:36:11+00:00",
+            "created_datetime": "2014-03-08T14:36:11+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/500808653\/",
+                    "id": "500808653"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/368516557\/",
+                    "id": "368516557"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 2670.0,
+                "distance_total": 6485.65632,
+                "steps_total": 0.0,
+                "speed_avg": 2.4274272,
+                "elapsed_time_total": 2670.0,
+                "metabolic_energy_total": 2267728.0
+            }
+        }, {
+            "start_datetime": "2014-03-09T16:19:43+00:00",
+            "name": "",
+            "updated_datetime": "2014-03-09T16:19:43+00:00",
+            "created_datetime": "2014-03-09T16:19:43+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/501800437\/",
+                    "id": "501800437"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/369253525\/",
+                    "id": "369253525"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 1917.0,
+                "distance_total": 4988.9664,
+                "steps_total": 0.0,
+                "speed_avg": 2.6017728,
+                "elapsed_time_total": 1917.0,
+                "metabolic_energy_total": 1715440.0
+            }
+        }, {
+            "start_datetime": "2014-03-10T12:01:00+00:00",
+            "name": "MapMyRUN Mar 10, 2014 7:36 AM",
+            "updated_datetime": "2014-03-10T12:36:16+00:00",
+            "created_datetime": "2014-03-10T12:36:16+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "MapMyRUN Blackberry",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/502580325\/",
+                    "id": "502580325"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/369794493\/",
+                    "id": "369794493"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": true,
+            "aggregates": {
+                "active_time_total": 2115.0,
+                "distance_total": 5197.92362496,
+                "steps_total": 0.0,
+                "speed_avg": 2.457647104,
+                "elapsed_time_total": 2115.0,
+                "metabolic_energy_total": 1811672.0
+            }
+        }, {
+            "start_datetime": "2014-03-12T11:27:06+00:00",
+            "name": "MapMyRUN Mar 12, 2014 6:58 AM",
+            "updated_datetime": "2014-03-12T11:58:21+00:00",
+            "created_datetime": "2014-03-12T11:58:21+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "MapMyRUN Blackberry",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/504859595\/",
+                    "id": "504859595"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/371322227\/",
+                    "id": "371322227"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": true,
+            "aggregates": {
+                "active_time_total": 1875.0,
+                "distance_total": 5123.97426816,
+                "steps_total": 0.0,
+                "speed_avg": 2.7327912832,
+                "elapsed_time_total": 1875.0,
+                "metabolic_energy_total": 1740544.0
+            }
+        }, {
+            "start_datetime": "2014-03-15T13:23:21+00:00",
+            "name": "A 3.6 mi Run \/ Jog mapped on Sat Mar 15 2014",
+            "updated_datetime": "2014-03-15T13:23:21+00:00",
+            "created_datetime": "2014-03-15T13:23:21+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "MMF Internal Use Only",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/507393381\/",
+                    "id": "507393381"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/372962507\/",
+                    "id": "372962507"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 2460.0,
+                "distance_total": 5797.48473216,
+                "steps_total": 0.0,
+                "speed_avg": 2.3567010016,
+                "elapsed_time_total": 2460.0,
+                "metabolic_energy_total": 2041792.0
+            }
+        }, {
+            "start_datetime": "2014-03-16T12:18:11+00:00",
+            "name": "MapMyRUN Mar 16, 2014 7:47 AM",
+            "updated_datetime": "2014-03-16T12:47:02+00:00",
+            "created_datetime": "2014-03-16T12:47:02+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "MapMyRUN Blackberry",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/508278491\/",
+                    "id": "508278491"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/373623707\/",
+                    "id": "373623707"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": true,
+            "aggregates": {
+                "active_time_total": 1730.0,
+                "distance_total": 4979.69657856,
+                "steps_total": 0.0,
+                "speed_avg": 2.8784413856,
+                "elapsed_time_total": 1730.0,
+                "metabolic_energy_total": 1677784.0
+            }
+        }, {
+            "start_datetime": "2014-03-17T11:32:10+00:00",
+            "name": "MapMyRUN Mar 17, 2014 7:12 AM",
+            "updated_datetime": "2014-03-17T12:12:40+00:00",
+            "created_datetime": "2014-03-17T12:12:40+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "MapMyRUN Blackberry",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/509084637\/",
+                    "id": "509084637"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/374153275\/",
+                    "id": "374153275"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": true,
+            "aggregates": {
+                "active_time_total": 2430.0,
+                "distance_total": 6714.24754176,
+                "steps_total": 0.0,
+                "speed_avg": 2.763064832,
+                "elapsed_time_total": 2430.0,
+                "metabolic_energy_total": 2276096.0
+            }
+        }, {
+            "start_datetime": "2014-03-19T18:00:32+00:00",
+            "name": "",
+            "updated_datetime": "2014-03-19T18:00:32+00:00",
+            "created_datetime": "2014-03-19T18:00:32+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": null,
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/511235243\/",
+                    "id": "511235243"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": false,
+            "aggregates": {
+                "active_time_total": 2172.0,
+                "distance_total": 6437.376,
+                "steps_total": 0.0,
+                "speed_avg": 2.9638752,
+                "elapsed_time_total": 2172.0,
+                "metabolic_energy_total": 2163128.0
+            }
+        }, {
+            "start_datetime": "2014-03-22T17:01:42+00:00",
+            "name": "MapMyRUN Mar 22, 2014 12:28 PM",
+            "updated_datetime": "2014-03-22T17:28:52+00:00",
+            "created_datetime": "2014-03-22T17:28:52+00:00",
+            "notes": "",
+            "reference_key": null,
+            "start_locale_timezone": "US\/Central",
+            "source": "MapMyRUN Blackberry",
+            "_links": {
+                "self": [{
+                    "href": "\/v7.0\/workout\/514005557\/",
+                    "id": "514005557"
+                }],
+                "route": [{
+                    "href": "\/v7.0\/route\/377319235\/",
+                    "id": "377319235"
+                }],
+                "activity_type": [{
+                    "href": "\/v7.0\/activity_type\/16\/",
+                    "id": "16"
+                }],
+                "user": [{
+                    "href": "\/v7.0\/user\/3217681\/",
+                    "id": "3217681"
+                }],
+                "privacy": [{
+                    "href": "\/v7.0\/privacy_option\/1\/",
+                    "id": "1"
+                }]
+            },
+            "has_time_series": false,
+            "is_verified": true,
+            "aggregates": {
+                "active_time_total": 1628.0,
+                "distance_total": 5244.44976,
+                "steps_total": 0.0,
+                "speed_avg": 3.2214060032,
+                "elapsed_time_total": 1628.0,
+                "metabolic_energy_total": 1769832.0
             }
         }]
     },
-    "total_count": 182
+    "total_count": 77
 }

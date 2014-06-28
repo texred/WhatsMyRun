@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{9120
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsMyRun.Services.Tests", "Testing\WhatsMyRun.Services.Tests\WhatsMyRun.Services.Tests.csproj", "{8B2A9A4C-F92A-454C-85D4-8569846D88AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFWhatsMyRun", "WPFWhatsMyRun\WPFWhatsMyRun.csproj", "{F3E0B913-B0F0-404C-B868-E4A54001D9F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,16 @@ Global
 		{8B2A9A4C-F92A-454C-85D4-8569846D88AE}.Release|ARM.ActiveCfg = Release|Any CPU
 		{8B2A9A4C-F92A-454C-85D4-8569846D88AE}.Release|x64.ActiveCfg = Release|Any CPU
 		{8B2A9A4C-F92A-454C-85D4-8569846D88AE}.Release|x86.ActiveCfg = Release|Any CPU
+		{F3E0B913-B0F0-404C-B868-E4A54001D9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E0B913-B0F0-404C-B868-E4A54001D9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E0B913-B0F0-404C-B868-E4A54001D9F7}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F3E0B913-B0F0-404C-B868-E4A54001D9F7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F3E0B913-B0F0-404C-B868-E4A54001D9F7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F3E0B913-B0F0-404C-B868-E4A54001D9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E0B913-B0F0-404C-B868-E4A54001D9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E0B913-B0F0-404C-B868-E4A54001D9F7}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F3E0B913-B0F0-404C-B868-E4A54001D9F7}.Release|x64.ActiveCfg = Release|Any CPU
+		{F3E0B913-B0F0-404C-B868-E4A54001D9F7}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

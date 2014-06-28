@@ -11,6 +11,7 @@ using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using WhatsMyRun.DataModel.Workouts;
 using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace WhatsMyRun.Tests
 {
@@ -39,7 +40,15 @@ namespace WhatsMyRun.Tests
 
             //ACT
             var workouts = await provider.GetWorkoutsForUserAsync(1);
-                        
+
+            //For runs over _ (6mi for now), show the min/mile times over time.
+            //so convert the distance to miles, then check it.
+            var lastWorkout = workouts.Last();
+            var speed = lastWorkout.AverageSpeedInMilesPerHour;
+            TimeSpan mileTime = lastWorkout.AverageTimePerMile;
+            var miles = lastWorkout.DistanceInMiles;
+
+            Trace.WriteLine("Workout count: " + workouts.Count());
             //started to parse the data for ALL workouts, but not all workouts have this data
             //(ie workout #20 doesn't have AverageSpeedInX
             foreach (var workout in workouts)
@@ -55,7 +64,7 @@ namespace WhatsMyRun.Tests
             var firstWorkout = workouts.First();
             //Certain property are only set on the first of the test data, just assert that:
             Assert.AreEqual(1020.0, firstWorkout.ActiveTimeInSeconds);
-            Assert.AreEqual(2.548128, firstWorkout.AverageSpeedInX);
+            Assert.AreEqual(2.548128, firstWorkout.AverageSpeedInMetersPerSecond);
             Assert.AreEqual(2591.04384, firstWorkout.DistanceInMeters);
             Assert.AreEqual(1025.0, firstWorkout.ElapsedTimeInSeconds.TotalSeconds);
             Assert.AreEqual(849352.0, firstWorkout.MetabolicEnergeyTotal);

@@ -22,6 +22,7 @@ namespace WhatsMyRun.Services.DataProviders.Workouts
         public async Task<IEnumerable<WorkoutDataModel>> GetWorkoutsForUserAsync(int userId)
         {
             var uri = new Uri(string.Format(ServiceUri, userId));
+            //Note: API calls to MMR only gets 20 records, unless you set the "limit" higher. See https://www.mapmyapi.com/docs/Paging
             //changed to string because of compile issues
             var workoutDataString = await _requestor.GetDataAsync(uri);
             var workoutData = JObject.Parse(workoutDataString);
@@ -42,7 +43,7 @@ namespace WhatsMyRun.Services.DataProviders.Workouts
             var workout = new WorkoutDataModel();
 
             workout.ActiveTimeInSeconds = workoutObj["aggregates"]["active_time_total"].ValueWithDefault<double>();
-            workout.AverageSpeedInX = workoutObj["aggregates"]["speed_avg"].ValueWithDefault<double>();
+            workout.AverageSpeedInMetersPerSecond = workoutObj["aggregates"]["speed_avg"].ValueWithDefault<double>();
             workout.DistanceInMeters = workoutObj["aggregates"]["distance_total"].ValueWithDefault<double>();
             workout.ElapsedTimeInSeconds = TimeSpan.FromSeconds(workoutObj["aggregates"]["elapsed_time_total"].ValueWithDefault<double>());
             workout.MetabolicEnergeyTotal = workoutObj["aggregates"]["metabolic_energy_total"].ValueWithDefault<double>();
