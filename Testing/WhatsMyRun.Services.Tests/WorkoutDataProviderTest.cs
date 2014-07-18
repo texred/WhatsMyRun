@@ -30,8 +30,8 @@ namespace WhatsMyRun.Tests
         {
             //ARRANGE
             var mockRequestor = new Moq.Mock<IDataRequestor>();
-            var mockedData = GetSingleWorkoutDataString();
-            mockedData = File.ReadAllText(dataLocation);
+            var mockedData = GetAllWorkoutsDataString();
+
 
             var provider = new WorkoutDataProvider(mockRequestor.Object);
             mockRequestor.Setup(r => r.GetDataAsync(It.IsAny<Uri>()))
@@ -128,22 +128,27 @@ namespace WhatsMyRun.Tests
             Assert.AreEqual(1, workouts.Count());
         }
 
-        private string GetSingleWorkoutDataString()
+        private string GetAllWorkoutsDataString()
         {
             var mockedData = File.ReadAllText(dataLocation);
             var workoutData = JObject.Parse(mockedData);
-            var firstWorkout = workoutData["_embedded"]["workouts"].First();
 
-            RemoveAllOneWorkout(workoutData);
+            return workoutData.ToString();
+        }
+
+        private string GetSingleWorkoutDataString()
+        {
+            var workoutData = JObject.Parse(GetAllWorkoutsDataString());
+            
+            RemoveAllButOneWorkout(workoutData);
 
             //also set workouts to 1 in case code is using that
             workoutData["total_count"] = "1";
 
-            mockedData = workoutData.ToString();
-            return mockedData;
+            return workoutData.ToString();
         }
 
-        private static void RemoveAllOneWorkout(JObject workoutData)
+        private static void RemoveAllButOneWorkout(JObject workoutData)
         {
             var workoutsToRemove = new List<JToken>();
 
