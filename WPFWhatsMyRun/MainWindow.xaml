@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0" x:Class="WPFWhatsMyRun.MainWindow"
         Title="MainWindow" Height="800" Width="800">
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
 
         <d3:ChartPlotter Name="plotter" Margin="10,10,20,10">
             <d3:ChartPlotter.HorizontalAxis>

@@ -12,14 +12,18 @@ namespace WhatsMyRun.Services.DataRequestor
     {
         public async Task<string> GetDataAsync(Uri uri)
         {
-            //var slnRoot = Directory.GetParent(Directory.GetParent(
-            //    Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)));
+            var solutionRoot = Directory.GetParent(Directory.GetParent(Directory.GetParent(
+                Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)).FullName).FullName).FullName;
+            var testingDataFullPath = Path.Combine(solutionRoot, @"Testing\WhatsMyRun.Services.Tests", "SampleRunDataFromJune.json");
 
-            string dataLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "..\\Testing\\SampleRunDataFromJune.json";
-
-            using(var sr = new StreamReader( new FileStream(dataLocation, FileMode.Open)))
+            using (var fs = new FileStream(testingDataFullPath, FileMode.Open))
+            using (var sr = new StreamReader(fs))
             {
-                return await sr.ReadToEndAsync();
+                //var d = sr.ReadToEnd();
+                var t = new Task<string>(() => sr.ReadToEnd());
+                return await t;
+                //.net bug w/ this? It doesn't ever return the results.
+                //return await sr.ReadToEndAsync();
             }
         }
 

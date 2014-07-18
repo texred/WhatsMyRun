@@ -33,7 +33,6 @@ namespace WPFWhatsMyRun
         {
             InitializeComponent();
             InitializeIOC();
-            DisplayWorkoutGraph();
         }
 
         private void InitializeIOC()
@@ -43,10 +42,13 @@ namespace WPFWhatsMyRun
             SimpleIoc.Default.Register<IWorkoutDataProvider, WorkoutDataProvider>();
         }
 
-        private void DisplayWorkoutGraph()
+        private async Task DisplayWorkoutGraph()
         {
             var workoutDataProvider = ServiceLocator.Current.GetInstance<IWorkoutDataProvider>();
-            var workouts = workoutDataProvider.GetWorkoutsForUserAsync(22).Result;
+            //var workoutsTask = workoutDataProvider.GetWorkoutsForUserAsync(22);
+            //workoutsTask.Wait();
+            //var workouts = workoutsTask.Result;
+            var workouts = await workoutDataProvider.GetWorkoutsForUserAsync(22).ConfigureAwait(true);
 
             DateTime[] workoutDates = workouts.Select(w => w.StartTime).ToArray();
             TimeSpan[] workoutTimespans = workouts.Select(w => w.AverageTimePerMile).ToArray();
@@ -58,8 +60,14 @@ namespace WPFWhatsMyRun
             workoutTimesDataSource.SetYMapping(ts => ts.TotalMinutes);//dateAxis.ConvertToDouble(ts));
 
             CompositeDataSource compositeDataSource1 = new CompositeDataSource(datesDataSource, workoutTimesDataSource);
-            plotter.AddLineGraph(compositeDataSource1, (Color)ColorConverter.ConvertFromString("00FF00"));
+            plotter.AddLineGraph(compositeDataSource1, (Color)ColorConverter.ConvertFromString("#00FF00"));
             plotter.Viewport.FitToView();
+        }
+
+        private async void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            await DisplayWorkoutGraph();
+
         }
     }
 }
