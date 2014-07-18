@@ -1,24 +1,24 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WhatsMyRun.Services.DataRequestor;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using WhatsMyRun.Services.DataProviders.Workouts;
-using System.Threading.Tasks;
-using System.IO;
-using System.Reflection;
-using System.Linq;
-using Newtonsoft.Json.Linq;
-using System.Collections.Generic;
-using WhatsMyRun.DataModel.Workouts;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
+using WhatsMyRun.Services.DataProviders.Workouts;
+using WhatsMyRun.Services.DataRequestor;
 
 namespace WhatsMyRun.Tests
 {
     [TestClass]
     public class WorkoutDataProviderTest
     {
-        private static readonly string dataLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\SampleWorkoutsData.json";
+        private static readonly string dataLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) +
+                                                      "\\SampleWorkoutsData.json";
 
         [ClassInitialize]
         public static void ClassInitialize(TestContext context)
@@ -63,13 +63,13 @@ namespace WhatsMyRun.Tests
 
             var firstWorkout = workouts.First();
             //Certain property are only set on the first of the test data, just assert that:
-            Assert.AreEqual(1020.0, firstWorkout.ActiveTimeInSeconds);
-            Assert.AreEqual(2.548128, firstWorkout.AverageSpeedInMetersPerSecond);
-            Assert.AreEqual(2591.04384, firstWorkout.DistanceInMeters);
-            Assert.AreEqual(1025.0, firstWorkout.ElapsedTimeInSeconds.TotalSeconds);
-            Assert.AreEqual(849352.0, firstWorkout.MetabolicEnergeyTotal);
+            Assert.AreEqual(3600, firstWorkout.ActiveTimeInSeconds);
+            Assert.AreEqual(2.3290784, firstWorkout.AverageSpeedInMetersPerSecond);
+            Assert.AreEqual(8384.68224, firstWorkout.DistanceInMeters);
+            Assert.AreEqual(3600, firstWorkout.ElapsedTimeInSeconds.TotalSeconds);
+            Assert.AreEqual(2953904.0, firstWorkout.MetabolicEnergeyTotal);
             Assert.AreEqual("test notes", firstWorkout.Notes);
-            Assert.AreEqual(DateTime.Parse("2010-05-22T14:08:23"), firstWorkout.StartTime);
+            Assert.AreEqual(DateTime.Parse("2014-01-26T18:00:00+00:00"), firstWorkout.StartTime);
             Assert.AreEqual(200, firstWorkout.TotalSteps);
 
             //Wanted this in a sep test, but with async, I couldn't figure out how to have the work done in ClassInitialize

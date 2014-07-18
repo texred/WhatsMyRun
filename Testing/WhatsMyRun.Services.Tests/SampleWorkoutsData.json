@@ -16,7 +16,7 @@
             "name": "Ryan's Winter Run in the the SNOW",
             "updated_datetime": "2014-01-27T13:40:03+00:00",
             "created_datetime": "2014-01-27T13:40:03+00:00",
-            "notes": "",
+            "notes": "test notes",
             "reference_key": null,
             "start_locale_timezone": "US\/Central",
             "source": null,
@@ -47,7 +47,7 @@
             "aggregates": {
                 "active_time_total": 3600.0,
                 "distance_total": 8384.68224,
-                "steps_total": 0.0,
+                "steps_total": 200.0,
                 "speed_avg": 2.3290784,
                 "elapsed_time_total": 3600.0,
                 "metabolic_energy_total": 2953904.0
